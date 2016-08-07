@@ -1,0 +1,33 @@
+Using Git Bash terminal
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Create a blank Project called "FrontendNews" in GitHub site prior to this.
+
+pwd
+// to find out my current directory, turns out I was in /c/Users/piti.sinkantarakorn
+
+cd Desktop/webapp
+
+git clone https://github.com/phra-isuan/FrontendNews
+
+cd FrontendNews
+
+ls
+// folder is new so only README.md exists
+
+touch index.html
+
+touch main.css
+
+touch app.js
+
+git add .
+// add all untracked files  . means to add all files in the current directory
+
+git commit -m "initial commit after creating 3 files"
+
+git push
+// 3 new files will now appear in GitHub site for "Frontend News"
+
+
+git ls-tree -r master --name-only
+//list all the files currently being tracked under the branch master
